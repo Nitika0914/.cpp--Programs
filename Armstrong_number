@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,sum=0;
+    cin>>n;
+    int a=n;
+    while(n>0){
+        int lastd=n%10;
+        sum+=(lastd*lastd*lastd);
+        n/=10;
+    }
+    cout<<sum<<endl;
+    if(sum==a){
+        cout<<"armstrong"<<endl;
+    } else{
+        cout<<"non amrstrong"<<endl;
+    }
+    return 0;
+}
